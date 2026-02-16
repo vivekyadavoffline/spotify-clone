@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Web Player: Music for everyone vivek's clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="navigation-panel bg-black">
+    <div class="nav-left-section">
+      <img class="invert spotify-logo" src="assets/logo.svg" alt="logo" />
+
+      <div class="home-button bg-grey">
+        <img class="home-icon" src="assets/home.svg" alt="home" />
+      </div>
+
+      <div class="search-box bg-grey">
+        <img class="grey-icon" src="assets/search.svg" alt="search" />
+        <input type="text" placeholder="What do you want to play?" class="search-input" />
+        <span class="line"></span>
+        <img class="grey-icon" src="assets/playlist.svg" alt="playlist" />
+      </div>
+    </div>
+
+    <div class="nav-right-section">
+      <a class="nav-link" href="https://www.spotify.com/in-en/premium/">Premium</a>
+      <a class="nav-link" href="https://support.spotify.com/in-en/">Support</a>
+      <a class="nav-link" href="https://www.spotify.com/in-en/download/windows/">Download</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <img class="grey-icon" height="14" src="assets/download.svg" alt="download" />
+      <button type="button" class="btn">Install App</button>
+      <button type="button" class="btn">Sign up</button>
+      <button type="button" class="btn-log btn">Log in</button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container flex">
+    <div class="left bg-black">
+      <div class="library">
+        <div>Your Library</div>
+        <button type="button" class="btn-create bg-grey">
+          <img height="14" class="grey-icon" src="assets/plus.svg" alt="plus" />
+          Create
+        </button>
+      </div>
+     <div class="playlist-container bg-black bg-grey">
+      <div class="text-1">Made for you playlist
+       
+
+      </div>
+     </div>
+      <div class="playlist-container bg-black bg-grey">
+        <div class="text-1">Create your first playlist</div>
+        <div class="text-2">It's easy, we'll help you</div>
+        <button type="button" class="btn-create" style="color: black; margin: 15px 3px 3px 20px;">Create
+          Playlist</button>
+      </div>
+
+      <div class="playlist-container bg-black bg-grey">
+        <div class="text-1">Let's find some podcasts to follow</div>
+        <div class="text-2">We'll keep you updated on new episodes</div>
+        <button type="button" class="btn-create" style="color: black; margin: 15px 3px 3px 20px;">Browse
+          Podcasts</button>
+      </div>
+      <div class="middle-box"></div>
+      <div class="footer">
+        <a href="https://www.spotify.com/in-en/legal/" target="_blank" rel="noopener noreferrer">Legal</a>
+        <a href="https://www.spotify.com/in-en/safetyandprivacy/" target="_blank" rel="noopener noreferrer">Safety &
+          Privacy Center</a>
+        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy
+          Policy</a>
+        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank"
+          rel="noopener noreferrer">Cookies</a>
+        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" target="_blank" rel="noopener noreferrer">About
+          Ads</a>
+        <a href="https://www.spotify.com/in-en/accessibility/" target="_blank"
+          rel="noopener noreferrer">Accessibility</a>
+      </div>
+
+      <div class="footer-bottom">
+        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener noreferrer">Cookies</a>
+      </div>
+      <div style="margin-top:40px;">
+        <button type="button" class="btn-create btn-lang bg-grey">
+          <img height="14" class="invert" style="padding-right:5px;" src="assets/lang.svg" alt="language" />
+          English
+        </button>
+      </div>
+    </div>
+
+    <div class="right">
+      <h1>Trending songs</h1>
+      <div class="trending">
+
+
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/2fbPSvqlWjPL3Bq5mBU46L?highlight=spotify:track:5g92T9RLD0DydPf4szuZvV"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273c2b240660cd0644dc54f7cb1" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/2fbPSvqlWjPL3Bq5mBU46L?highlight=spotify:track:5g92T9RLD0DydPf4szuZvV"
+                target="_blank" rel="noopener noreferrer">Wahaj Bewajah</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507" target="_blank"
+                rel="noopener noreferrer">Vishal Mishra,</a>
+              <a href="https://open.spotify.com/artist/5o36rLQd78Zh8CaT8rn59d" target="_blank"
+                rel="noopener noreferrer">Shyeras Puranik,</a>
+              <a href="https://open.spotify.com/artist/0m3D4grap8VFSzbJMqgNVk" target="_blank"
+                rel="noopener noreferrer">Kumar</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/7zSGzs1r6SF5I2T5ZfzNCa?highlight=spotify:track:0rSU2KwpOCqLVDCPwd4WbE"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273c034e7aee0628ead7e9a39d8" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/7zSGzs1r6SF5I2T5ZfzNCa?highlight=spotify:track:0rSU2KwpOCqLVDCPwd4WbE"
+                target="_blank" rel="noopener noreferrer">Thinking of You</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/6LEG9Ld1aLImEFEVHdWNSB" target="_blank"
+                rel="noopener noreferrer">Ap Dhillon</a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/2wOy3GGZN8Z13kgwoYlqSk?highlight=spotify:track:4y6I1Jm5Vh0QKh454bOz4i"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i1.sndcdn.com/artworks-6uvHMw8sBi3hEWNf-gby9Dw-t1080x1080.png" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/2wOy3GGZN8Z13kgwoYlqSk?highlight=spotify:track:4y6I1Jm5Vh0QKh454bOz4i"
+                target="_blank" rel="noopener noreferrer">Nazare</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/0QntOArZgiNHoemAzwJPu5" target="_blank"
+                rel="noopener noreferrer">Gur Sidhu,</a>
+              <a href="https://open.spotify.com/artist/0F4kRjMBP6NrjpEBEoL0Xb" target="_blank"
+                rel="noopener noreferrer">Kaptan,</a>
+              <a href="https://open.spotify.com/artist/0uOUeC51AxGnP6hB8gurwt" target="_blank"
+                rel="noopener noreferrer">Cheema Ya</a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/68OViDFFwerfn315fcwwwl?highlight=spotify:track:2E5kZ1qnB7V9bcwBEKvZv8"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e43bdf1e013f6ad4a53f9819" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/68OViDFFwerfn315fcwwwl?highlight=spotify:track:2E5kZ1qnB7V9bcwBEKvZv8"
+                target="_blank" rel="noopener noreferrer">Kasturi</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank"
+                rel="noopener noreferrer">Arjit Singh,</a>
+              <a href="https://open.spotify.com/artist/1bC9tQ3AM7JQfK6VfzfZLI" target="_blank"
+                rel="noopener noreferrer">Prasad S,</a>
+              <a href="https://open.spotify.com/artist/52XgeWw24o4klNdfwvB0Vx" target="_blank"
+                rel="noopener noreferrer">Kunal vermma</a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a
+              href="https://open.spotify.com/album/4oniyB3TRFhjglVSqVgy9e?highlight=spotify:track:6fGapufucZHPva1kvCqceA">
+              <div class="card-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZkG9PXGV00Wi96qvUBkGWNHo2wnRnrJIRA&s"
+                  alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/4oniyB3TRFhjglVSqVgy9e?highlight=spotify:track:6fGapufucZHPva1kvCqceA"
+                target="_blank" rel="noopener noreferrer">Always Everywhere</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5">Charli xcx</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a
+              href="https://open.spotify.com/album/4iiAoHEukZQFJPyH14laGO?highlight=spotify:track:7Ap5aHmy2K57COwJqHYYEb">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273a69472bfea825fbc8b960e4b" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/4iiAoHEukZQFJPyH14laGO?highlight=spotify:track:7Ap5aHmy2K57COwJqHYYEb"
+                target="_blank" rel="noopener noreferrer">Jo Ishq Hua</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/2IX6xq1cVcBoD4obUsT5xs">Aditya Dev</a>
+              <a href="https://open.spotify.com/artist/5NHm4TU5Twz7owibYxJfFU">King</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/2fbPSvqlWjPL3Bq5mBU46L?highlight=spotify:track:5g92T9RLD0DydPf4szuZvV"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273c2b240660cd0644dc54f7cb1" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/2fbPSvqlWjPL3Bq5mBU46L?highlight=spotify:track:5g92T9RLD0DydPf4szuZvV"
+                target="_blank" rel="noopener noreferrer">Wahaj Bewajah</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507" target="_blank"
+                rel="noopener noreferrer">Vishal Mishra,</a>
+              <a href="https://open.spotify.com/artist/5o36rLQd78Zh8CaT8rn59d" target="_blank"
+                rel="noopener noreferrer">Shyeras Puranik,</a>
+              <a href="https://open.spotify.com/artist/0m3D4grap8VFSzbJMqgNVk" target="_blank"
+                rel="noopener noreferrer">Kumar</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/7zSGzs1r6SF5I2T5ZfzNCa?highlight=spotify:track:0rSU2KwpOCqLVDCPwd4WbE"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273c034e7aee0628ead7e9a39d8" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/7zSGzs1r6SF5I2T5ZfzNCa?highlight=spotify:track:0rSU2KwpOCqLVDCPwd4WbE"
+                target="_blank" rel="noopener noreferrer">Thinking of You</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/6LEG9Ld1aLImEFEVHdWNSB" target="_blank"
+                rel="noopener noreferrer">Ap Dhillon</a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/2wOy3GGZN8Z13kgwoYlqSk?highlight=spotify:track:4y6I1Jm5Vh0QKh454bOz4i"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i1.sndcdn.com/artworks-6uvHMw8sBi3hEWNf-gby9Dw-t1080x1080.png" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/2wOy3GGZN8Z13kgwoYlqSk?highlight=spotify:track:4y6I1Jm5Vh0QKh454bOz4i"
+                target="_blank" rel="noopener noreferrer">Nazare</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/0QntOArZgiNHoemAzwJPu5" target="_blank"
+                rel="noopener noreferrer">Gur Sidhu,</a>
+              <a href="https://open.spotify.com/artist/0F4kRjMBP6NrjpEBEoL0Xb" target="_blank"
+                rel="noopener noreferrer">Kaptan,</a>
+              <a href="https://open.spotify.com/artist/0uOUeC51AxGnP6hB8gurwt" target="_blank"
+                rel="noopener noreferrer">Cheema Ya</a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/68OViDFFwerfn315fcwwwl?highlight=spotify:track:2E5kZ1qnB7V9bcwBEKvZv8"
+              target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e43bdf1e013f6ad4a53f9819" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/68OViDFFwerfn315fcwwwl?highlight=spotify:track:2E5kZ1qnB7V9bcwBEKvZv8"
+                target="_blank" rel="noopener noreferrer">Kasturi</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank"
+                rel="noopener noreferrer">Arjit Singh,</a>
+              <a href="https://open.spotify.com/artist/1bC9tQ3AM7JQfK6VfzfZLI" target="_blank"
+                rel="noopener noreferrer">Prasad S,</a>
+              <a href="https://open.spotify.com/artist/52XgeWw24o4klNdfwvB0Vx" target="_blank"
+                rel="noopener noreferrer">Kunal vermma</a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a
+              href="https://open.spotify.com/album/4oniyB3TRFhjglVSqVgy9e?highlight=spotify:track:6fGapufucZHPva1kvCqceA">
+              <div class="card-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZkG9PXGV00Wi96qvUBkGWNHo2wnRnrJIRA&s"
+                  alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/4oniyB3TRFhjglVSqVgy9e?highlight=spotify:track:6fGapufucZHPva1kvCqceA"
+                target="_blank" rel="noopener noreferrer">Always Everywhere</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5">Charli xcx</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a
+              href="https://open.spotify.com/album/4iiAoHEukZQFJPyH14laGO?highlight=spotify:track:7Ap5aHmy2K57COwJqHYYEb">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616d0000b273a69472bfea825fbc8b960e4b" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/4iiAoHEukZQFJPyH14laGO?highlight=spotify:track:7Ap5aHmy2K57COwJqHYYEb"
+                target="_blank" rel="noopener noreferrer">Jo Ishq Hua</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/2IX6xq1cVcBoD4obUsT5xs">Aditya Dev</a>
+              <a href="https://open.spotify.com/artist/5NHm4TU5Twz7owibYxJfFU">King</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <h1> Popular artists</h1>
+      <div class="trending">
+
+
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" target="_blank"
+                rel="noopener noreferrer">Pritam</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG" target="_blank"
+                rel="noopener noreferrer">A.R.Rehman</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://a10.gaanacdn.com/gn_img/artists/Dk9KNk23Bx/k9KNqJJbBx/size_m_1739172212.jpg"
+                  alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank"
+                rel="noopener noreferrer">Arjit Singh</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebbb4064bef3a825344d5eb79e" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank"
+                rel="noopener noreferrer">Sachin-jigar</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb90b6c3d093f9b02aad628eaf" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank"
+                rel="noopener noreferrer">Vishal-Shekhar</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx" target="_blank"
+                rel="noopener noreferrer"> Atif Aslam</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" target="_blank"
+                rel="noopener noreferrer">Pritam</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG" target="_blank"
+                rel="noopener noreferrer">A.R.Rehman</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://a10.gaanacdn.com/gn_img/artists/Dk9KNk23Bx/k9KNqJJbBx/size_m_1739172212.jpg"
+                  alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank"
+                rel="noopener noreferrer">Arjit Singh</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebbb4064bef3a825344d5eb79e" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank"
+                rel="noopener noreferrer">Sachin-jigar</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cbce1640426a156724f785d72"
+                  alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" target="_blank"
+                rel="noopener noreferrer">Vishal-Shekhar</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card artist-card">
+            <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="song1" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx" target="_blank"
+                rel="noopener noreferrer"> Atif Aslam</a>
+            </h2>
+            <p>
+              <a>Artist</a>
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="playbar">
+        <div class="song-info"></div>
+        <div class="song-button flex">
+          <img src="assets\previous-song.svg" alt="play-buttons">
+          <img src="assets\play.svg" alt="play-buttons">
+          <img src="assets\next-song.svg" alt="play-buttons">
+        </div>
+        <div class="song-time"></div>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
