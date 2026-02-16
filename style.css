@@ -4,9 +4,12 @@
     font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
     font-size: 14px;
 }
+
+
 body {
     background-color: #000000;
     width:100%;
+    overflow-x: hidden;
 }
 /*  utility */
 .border {
@@ -169,12 +172,12 @@ body {
 /* ################################################################## */
 .left {
     margin: 0px 8px 0px 8px;
-    width: 28%;
+    width: 25vw;
     min-height: 80vh;
     padding: 14px;
     border-radius: 10px;
     background-color: #141414;
-
+    min-width: 350px;
 }
 
 .library {
@@ -269,7 +272,7 @@ body {
 
 
 .right {
-    width: 72%;
+    width: 75vw;
     margin: 0px 8px 0px 0px;
     min-height: 80vh;
     padding: 14px;
@@ -487,15 +490,75 @@ text-align: left;
 
 /*playbar start */
 .playbar{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: fixed;
+    bottom: 15px;
+    width: 70vw;
     background-color: #1ed760;
     justify-content: center;
-    margin: -5px -5px 0px -15px;
+  
+    body { overflow-x: hidden; }
+    border-radius: 20px;
 }
 .song-button{
     justify-content: center;
     padding: 10px;
     gap:12px;
 }
+.made-for-you{
+   height: 410px;
+   overflow:auto;
+   scrollbar-width: none;
+}
+.songlist ul {
+
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.songlist ul li {
+    list-style: decimal-leading-zero;
+    padding: 0px 5px;
+    gap: 22px;
+    cursor: pointer;
+    padding: 12px;
+    border: 2px solid rgb(255, 255, 255);
+   margin: 10px 12px 10px -10px;
+   display: flex;
+   border-radius: 10px;
+   align-items: center;
+   justify-content: space-between;
+    height: 30px;
+}
+.info{ 
+    width: 180px;
+    height: 20px;
+    flex-wrap: wrap;
+}
+
+.songlist ul li > img,
+.songlist ul li .play-now img {
+    filter: invert(74%) sepia(55%) saturate(747%) hue-rotate(87deg) brightness(91%) contrast(88%);
+}
+.songlist ul li .play-now {
+    color: #1ed760;
+}
+.seekbar{
+    border: 2px solid rgb(255, 255, 255);
+    width: 68.5vw;
+    height: 0px;
+    margin: 5px 2px 0px 9px;
+   position:absolute;
+   bottom: 0px;
+   border-radius: 0px 0px 10px 10px;}
+
+   .circle{
+    width: 10px;
+    padding: 4pxpx;
+    border: 4px solid #000000;
+    position: relative;
+    height: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    transition: left 0.5sec ;
+   }
