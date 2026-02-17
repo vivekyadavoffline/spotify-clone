@@ -11,6 +11,7 @@
 <body>
   <div class="navigation-panel bg-black">
     <div class="nav-left-section">
+      <button type="button" id="hamburgerBtn" class="hamburger-btn" aria-label="Open library">☰</button>
       <img class="invert spotify-logo" src="assets/logo.svg" alt="logo" />
 
       <div class="home-button bg-grey">
@@ -43,7 +44,9 @@
 
 
   <div class="container flex">
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
     <div class="left bg-black">
+      <button type="button" id="closeSidebarBtn" class="close-sidebar-btn" aria-label="Close library">✕</button>
       <div class="library">
         <div>Your Library</div>
         <button type="button" class="btn-create bg-grey">
@@ -51,10 +54,10 @@
           Create
         </button>
       </div>
-      <div class="playlist-container made-for-you bg-black bg-grey text-1" >Made for you playlist
+      <div class="playlist-container made-for-you bg-black bg-grey text-1">Made for you playlist
         <div class="songlist">
-          <ul >
-           
+          <ul>
+
           </ul>
 
         </div>
@@ -604,15 +607,155 @@
 
 
       </div>
-      <div class="playbar">
-        <div class="seekbar"><div class="circle"></div></div>
-        <div class="song-info"></div>
-        <div class="song-button flex">
-          <img src="assets\previous-song.svg" alt="play-buttons">
-          <img src="assets\play.svg" alt="play-buttons">
-          <img src="assets\next-song.svg" alt="play-buttons">
+      <h1>Popular albums and singles</h1>
+      <div class="trending">
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/7oL6mT4fV7m7Y7M6KQ8jFQ" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://m.media-amazon.com/images/I/91aPxUB8iHL._AC_UF1000,1000_QL80_.jpg" alt="Aashiqui 2" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/7oL6mT4fV7m7Y7M6KQ8jFQ" target="_blank" rel="noopener noreferrer">Aashiqui 2</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" target="_blank" rel="noopener noreferrer">Mithoon,</a>
+              <a href="https://open.spotify.com/artist/5f4QpKfy7ptCHwTqspnSJI" target="_blank" rel="noopener noreferrer">Ankit Tiwari,</a>
+              <a href="https://open.spotify.com/artist/4fEkbug6kZzzJ8eYX6Kbbp" target="_blank" rel="noopener noreferrer">Jeet Gannguli</a>
+            </p>
+          </div>
         </div>
-        <div class="song-time"></div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/2Lxoc72vRTGdQfMvj7Ovi1" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK5pVEmbw/size_m.jpg" alt="Yeh Jawaani Hai Deewani" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/2Lxoc72vRTGdQfMvj7Ovi1" target="_blank" rel="noopener noreferrer">Yeh Jawaani Hai Deewani</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" target="_blank" rel="noopener noreferrer">Pritam</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/3x5M9nY4JtNf5BS4M5C5uX" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqWP1p/4WEk6zAMKP/size_m_1759319509.jpg" alt="Sanam Teri Kasam" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/3x5M9nY4JtNf5BS4M5C5uX" target="_blank" rel="noopener noreferrer">Sanam Teri Kasam</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/0L5f9aJIaxQXTipZ7uQYiC" target="_blank" rel="noopener noreferrer">Himesh Reshammiya,</a>
+              <a href="https://open.spotify.com/artist/5HcunTidTUrOaf8V0iJcvl" target="_blank" rel="noopener noreferrer">Sameer Anjaan</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/0rA6A7A8Y2lCPgk6b06Pq4" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://c.saavncdn.com/067/Finding-Her-Hindi-2025-20250104190643-500x500.jpg" alt="Finding Her" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/0rA6A7A8Y2lCPgk6b06Pq4" target="_blank" rel="noopener noreferrer">Finding Her</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/6LEG9Ld1aLImEFEVHdWNSB" target="_blank" rel="noopener noreferrer">Kushagra,</a>
+              <a href="https://open.spotify.com/artist/7dVeAEJx6f0N2wWwUyx9g3" target="_blank" rel="noopener noreferrer">Bharath,</a>
+              <a href="https://open.spotify.com/artist/1HhlyIYf9P4N6B9J0wuM5g" target="_blank" rel="noopener noreferrer">Saaheal</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://open.spotify.com/album/2qQF4Lw6A9bWamjJ2GxVfY" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img src="https://a10.gaanacdn.com/gn_img/albums/21GWwrR3pk/GWwkAX0QWp/size_m_1740409545.jpg" alt="Young G.O.A.T" />
+                <span class="playbutton" aria-hidden="true"></span>
+              </div>
+            </a>
+            <h2>
+              <a href="https://open.spotify.com/album/2qQF4Lw6A9bWamjJ2GxVfY" target="_blank" rel="noopener noreferrer">Young G.O.A.T</a>
+            </h2>
+            <p>
+              <a href="https://open.spotify.com/artist/0QntOArZgiNHoemAzwJPu5" target="_blank" rel="noopener noreferrer">Cheema Y,</a>
+              <a href="https://open.spotify.com/artist/0uOUeC51AxGnP6hB8gurwt" target="_blank" rel="noopener noreferrer">Gur Sidhu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-footer">
+        <div class="right-footer-links">
+          <div class="footer-col">
+            <h3>Company</h3>
+            <a href="#">About</a>
+            <a href="#">Jobs</a>
+            <a href="#">For the Record</a>
+          </div>
+          <div class="footer-col">
+            <h3>Communities</h3>
+            <a href="#">For Artists</a>
+            <a href="#">Developers</a>
+            <a href="#">Advertising</a>
+            <a href="#">Investors</a>
+            <a href="#">Vendors</a>
+          </div>
+          <div class="footer-col">
+            <h3>Useful links</h3>
+            <a href="#">Support</a>
+            <a href="#">Free Mobile App</a>
+            <a href="#">Popular by Country</a>
+            <a href="#">Import your music</a>
+          </div>
+          <div class="footer-col">
+            <h3>Spotify Plans</h3>
+            <a href="#">Premium Lite</a>
+            <a href="#">Premium Standard</a>
+            <a href="#">Premium Platinum</a>
+            <a href="#">Premium Student</a>
+            <a href="#">Spotify Free</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div class="right-footer-line"></div>
+        <div class="right-footer-copy">&copy; 2026 Spotify AB</div>
+      </div>
+      <div class="playbar">
+        <div class="seekbar">
+          <div class="circle">
+
+          </div>
+        </div>
+        <div class="abovebar ">
+
+
+        <div class="song-info">  </div>
+        <div class="song-button flex">
+          <img id="previous" src="assets/previous-song.svg" alt="play-buttons">
+          <img id="play" src="assets/play.svg" alt="play-buttons">
+          <img id="next" src="assets/next-song.svg" alt="play-buttons">
+        </div>
+        <div class="song-time"></div></div>
       </div>
     </div>
 </body>
