@@ -10,7 +10,7 @@ function formatTime(totalSeconds) {
     minutes = minutes.toString().padStart(2, '0');
     seconds = seconds.toString().padStart(2, '0');
 
-    return `${minutes}:${seconds}`;
+    return `${minutes}:${seconds} `;
 }
 
 async function getsongs() {
