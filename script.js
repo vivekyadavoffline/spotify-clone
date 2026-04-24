@@ -6,7 +6,7 @@ function formatTime(totalSeconds) {
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = totalSeconds % 60;
 
-    // Add leading zero if needed
+    ////// Add leading zero if needed
     minutes = minutes.toString().padStart(2, '0');
     seconds = seconds.toString().padStart(2, '0');
 
