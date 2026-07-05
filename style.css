@@ -741,6 +741,21 @@ text-align: left;
     background-color: #1ed760;
     transition: left 0.12s linear;
    }
+
+/* Extracted inline styles */
+.btn-create-dark {
+    color: black;
+    margin: 15px 3px 3px 20px;
+}
+
+.footer-lang-container {
+    margin-top: 40px;
+}
+
+.lang-icon-padding {
+    padding-right: 5px;
+}
+
 .abovebar{
     display: flex;
     justify-content: space-between;
