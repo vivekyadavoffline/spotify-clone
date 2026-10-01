@@ -11,7 +11,7 @@ function formatTime(totalSeconds) {
     seconds = seconds.toString().padStart(2, '0');
 
     return `${minutes}:${seconds} `;
-}
+}.   
 
 async function getsongs() {
     const a = await fetch('songs/');
